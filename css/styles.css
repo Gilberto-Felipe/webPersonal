@@ -32,9 +32,11 @@ header.encabezado {
   width: 100%; }
 
 header figure img {
-  max-width: 2rem;
+  max-width: 30px;
   height: auto;
-  flex: 0 1 100%; }
+  flex: 0 1 100%;
+  margin: 0;
+  padding: 0; }
 
 .main-menu {
   flex: 1 1 100%;
@@ -57,15 +59,77 @@ header figure img {
   background-color: #ddd;
   color: #12afaf; }
 
-div.hero {
+/*------------------------------
+            PROFILE
+------------------------------*/
+section.profile {
   background-color: #12afaf;
   color: #fff;
-  flex: 1 1 auto;
+  height: 100%;
   display: flex;
-  justify-content: center; }
+  flex-direction: column; }
 
-div.hero .container {
+div.hero {
   margin-top: 4rem;
-  margin-bottom: 6rem; }
+  text-align: center; }
+
+main.main-info {
+  display: flex; }
+
+figure.box-photo {
+  width: 200px;
+  height: auto;
+  border: 2px solid #009500;
+  order: 0;
+  background-color: gray; }
+
+/*
+main article.presentation h3 {
+    margin-bottom: 0;
+    padding: 0;
+}
+main article.presentation h4 {
+    margin-top: .7rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+main article.presentation p{
+    margin-top: .7rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+*/
+article.presentation button#in-main {
+  background-color: #009500;
+  border-radius: 5px; }
+
+article.presentation button#in-main > a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: .5rem; }
+
+article.presentation button#in-main > a:hover {
+  color: #ddd; }
+
+article.briefly-description {
+  text-align: center;
+  width: auto;
+  margin: 0;
+  padding: 0; }
+
+article.briefly-description p {
+  background-color: #009500;
+  border: 4px groove silver;
+  display: inline-block;
+  padding: 1rem 1rem;
+  border-radius: 10px; }
+
+/*------------------------------
+            QUERIES
+------------------------------*/
+@media (min-width: 992px) {
+  html {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -212,6 +212,55 @@ section.hobbies ul {
   margin-top: 0; }
 
 /*------------------------------
+            CAROUSEL
+------------------------------*/
+/*------------------------------
+            FOOTER
+------------------------------*/
+footer {
+  background: #111111;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem;
+  padding: .3rem 0; }
+
+footer ul {
+  display: flex;
+  justify-content: center; }
+
+footer ul li {
+  list-style: none; }
+
+footer ul li a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .5rem;
+  opacity: .7;
+  transition: all .5s ease; }
+
+footer ul li a:hover {
+  opacity: 1; }
+
+/* FLECHA SUBIR */
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #12afaf;
+  text-decoration: none;
+  z-index: 99;
+  /*asignas un n├║mero de capa. La capa m├ís alta se ubica arriba de las dem├ís*/
+  line-height: 0;
+  /*para quitar valor x defecto del navegador*/
+  transition: all .5s ease; }
+
+.ir-arriba:hover {
+  outline: 0;
+  text-decoration: none;
+  color: #fff; }
+
+/*------------------------------
             QUERIES
 ------------------------------*/
 @media (min-width: 992px) {

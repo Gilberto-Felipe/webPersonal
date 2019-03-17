@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*------------------------------------
+            PATR├ôN DE COLORES
+-------------------------------------*/
+/*------------------------------
+            BODY
+------------------------------*/
+body {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #111111; }
+
+/*------------------------------
+            WELCOME
+------------------------------*/
+section.welcome {
+  /*background: url("../images/fondo-encabezado-grande.jpg") no-repeat center top;*/
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed !important;
+  display: flex;
+  flex-direction: column; }
+
+header.encabezado {
+  background: #111111;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+header figure img {
+  max-width: 2rem;
+  height: auto;
+  flex: 0 1 100%; }
+
+.main-menu {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.main-menu a {
+  flex: 1 1 auto;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 1.5rem 0; }
+
+.main-menu a:hover,
+.main-menu a.active {
+  background-color: #ddd;
+  color: #12afaf; }
+
+div.hero {
+  background-color: #12afaf;
+  color: #fff;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center; }
+
+div.hero .container {
+  margin-top: 4rem;
+  margin-bottom: 6rem; }
+
+/*# sourceMappingURL=styles.css.map */

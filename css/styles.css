@@ -13,14 +13,6 @@ body {
 /*------------------------------
             WELCOME
 ------------------------------*/
-section.welcome {
-  /*background: url("../images/fondo-encabezado-grande.jpg") no-repeat center top;*/
-  color: #fff;
-  background-size: cover;
-  background-attachment: fixed !important;
-  display: flex;
-  flex-direction: column; }
-
 header.encabezado {
   background: #111111;
   color: #fff;
@@ -32,7 +24,7 @@ header.encabezado {
   width: 100%; }
 
 header figure img {
-  max-width: 30px;
+  max-width: 2rem;
   height: auto;
   flex: 0 1 auto;
   margin: 0;
@@ -83,22 +75,6 @@ figure.box-photo {
   order: 0;
   background-color: gray; }
 
-/*
-main article.presentation h3 {
-    margin-bottom: 0;
-    padding: 0;
-}
-main article.presentation h4 {
-    margin-top: .7rem;
-    margin-bottom: 0;
-    padding: 0;
-}
-main article.presentation p{
-    margin-top: .7rem;
-    margin-bottom: 0;
-    padding: 0;
-}
-*/
 article.presentation button#in-main {
   background-color: #009500;
   border-radius: 5px; }
@@ -170,12 +146,70 @@ section.philosophy p {
   margin: .5rem; }
 
 section.philosophy ul {
-  margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-top: .3rem;
+  margin-bottom: .5rem; }
 
 section.philosophy h4 {
-  margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-top: .3rem;
+  margin-bottom: .3rem; }
+
+section.philosophy ul li a,
+section.philosophy p a {
+  color: #12afaf;
+  text-decoration: none; }
+
+section.philosophy ul li a:hover,
+section.philosophy p a:hover {
+  color: crimson; }
+
+/*------------------------------
+            LINGUISTICS
+------------------------------*/
+section.linguistics {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  color: #111111;
+  padding: .5rem 2.5rem; }
+
+section.linguistics > h2.section-title {
+  text-align: center;
+  color: #12afaf; }
+
+section.linguistics p {
+  margin: .5rem; }
+
+section.linguistics ul {
+  margin-top: .3rem;
+  margin-bottom: .5rem; }
+
+section.linguistics h4 {
+  margin-top: .3rem;
+  margin-bottom: .3rem; }
+
+section.linguistics ul li a {
+  color: #12afaf;
+  text-decoration: none; }
+
+section.linguistics ul li a:hover {
+  color: crimson; }
+
+/*------------------------------
+            HOBBIES
+------------------------------*/
+section.hobbies {
+  display: flex;
+  flex-direction: column;
+  background-color: #009500;
+  color: #fff;
+  padding: .5rem 2.5rem; }
+
+section.hobbies > h2.section-title {
+  text-align: center;
+  color: #fff; }
+
+section.hobbies ul {
+  margin-top: 0; }
 
 /*------------------------------
             QUERIES

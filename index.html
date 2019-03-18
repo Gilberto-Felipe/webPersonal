@@ -21,13 +21,12 @@
                 <img src="images/logo_macross.svg" alt="logo">
             </figure>
             <nav class="main-menu">
-                <a class="active" href="#">Profile</a>
-                <a href="#">Software Engineering</a>
-                <a href="#">Philosophy</a>
-                <a href="#">Linguistics</a>
-                <a href="#">Hobbies</a>
-                <a href="#">Carousel</a>
-                <a href="#">Contact</a>
+                <a class="active" href="#s1">Profile</a>
+                <a href="#s2">Software Engineering</a>
+                <a href="#s3">Philosophy</a>
+                <a href="#s4">Linguistics</a>
+                <a href="#s5">Hobbies</a>
+                <a href="#s6">Contact</a>
             </nav>
         </header>
     </section>
@@ -39,11 +38,11 @@
         </div>
         <main class="main-info">
             <figure class="box-photo">
-                <img src="#" alt="Me">
+                <img src="images/IMG_0806.JPG" alt="Me">
             </figure>
             <article class="presentation">
                 <h3>Gilberto Felipe Ramírez García</35>
-                <h4>Software Engineering student</h4>
+                <h4>Software Engineering</h4>
                 <p>University of Colima, Mexico | Faculty of Telematics</p>
                 <h5>Previus: English Teacher, Elementary School Alejandro Flores Garibay</h5>
                 <h5>Education: BA in Philosophy, Rome (Italy)</h5>
@@ -55,18 +54,18 @@
         </article>
     </section>
 
-    <section class="software">
+    <section class="software" id="s2">
         <h2 class="section-title">Software Engineering</h2>
-        <p>I'm studying Software Engineering at the Faculty of Telematics in the University of Colima, Mexico. I focus into full-stack developtment. Since August 2018, I'm trainee at GH Apps, a software company in Colima. At the moment, I'm coworking in two projects coding the front-end.</p>
+        <p>I'm studying Software Engineering at the Faculty of Telematics in the University of Colima, Mexico. I'm focusing on full-stack developtment. Since August 2018, I'm trainee at GH Apps, a software company in Colima. At the moment, I'm coworking in two projects coding the front-end.</p>
         <p>I have knowledge of HTML5, CSS3, Sass, JavaScript, C#, SQL, PHP, Jquery, Ajax, Boostrap, and Admin Lte.</p>
-        <p>In addition to University, I've completed these online courses:</p>
+        <p>In addition to university, I've completed these online courses:</p>
         <ul>
             <li><a href="https://www.udemy.com/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL. Instructor: Juan Pablo de la Torre Valdez - Udemy</a></li>
             <li><a href="https://www.udemy.com/curso-de-bootstrap-4/">Master en Bootstrap 4: Crea páginas web responsive desde 0. Instructor: Erick Mines - Udemy</a></li>
         </ul>
     </section>
     
-    <section class="philosophy">
+    <section class="philosophy" id="s3">
         <h2 class="section-title">Philosophy</h2>
         <p>I obtained a BA in Philosophy in Rome, Italy. My major achivement was I graduated With the Highest Honors (<em>summa cum laude</em> in Latin). To me, the main skills that Philosophy gives are: Search the foundation of matters, it is, don't remain on the surface of things; be critic of the reality, ideas, and <em>status quo</em> of things, it is, don't believe whatever is said; try to improve your reality, ideas move the world and people.</p>
         <p>I taugth Classics (Latin & Ancient Greek) and philosophical courses at the department of Philosophy of the Catholic Theological Center of the diocese of Colima.</p>
@@ -85,9 +84,9 @@
         </ul>
     </section>
 
-    <section class="linguistics">
+    <section class="linguistics" id="s4">
         <h2 class="section-title">Linguistics</h2>
-        <p>My journey into languages began with English, Latin and Ancient Greek when I was teenager. I was 5 years teacher of Latin an Greek. I lived 5 years in Rome, Italy, when was studing Philosophy, so I learned Italian. In 2015, I got a Spanish Teacher Certification from the Instituto Cervantes, and I moved to Moscow, Russia, with a full-time contract for BKC-International House Moscow. This was, for the moment, my greatest adventure because I didn't know any Russian at all.</p>
+        <p>My journey into languages began with English, Latin and Ancient Greek when I was teenager. I was 5 years teacher of Latin an Greek. I lived 5 years in Rome, Italy, when was studing Philosophy, so I learned Italian. In 2015, I got a Spanish Teacher Certification from the Instituto Cervantes, and I moved to Moscow, Russia, with a full-time contract for BKC-International House Moscow. This was, for the moment, my greatest adventure.</p>
         <p>What methodology do I use? I'm conviced that the communicative approache is the best way to learn a language.</p>
 
         <h4>Working experience</h4>
@@ -101,7 +100,7 @@
         </ul>
         <p>Italian Teacher</p>
         <ul>
-            <li>2015 Part-time: Universidad del Valle de México (UVM) campus Sur (Guadalajara, Mexico)</li>
+            <li>2015 Part-time: <a href="https://uvm.mx/campus-guadalajara-sur">Universidad del Valle de México (UVM) campus Sur (Guadalajara, Mexico)</a></li>
             <li>I opened the course.</li>
         </ul>
 
@@ -122,7 +121,7 @@
             </ul>
     </section>
 
-    <section class="hobbies">
+    <section class="hobbies" id="s5">
         <h2 class="section-title">Hobbies</h2>
         <ul>
             <li>Improving my languages skills.</li>
@@ -131,9 +130,26 @@
         </ul>
     </section>
 
-    <aside class="carousel">
-            <h2 class="section-title">Carousel</h2>
-    </aside>
+    <section class="contact" id="s6">
+        <h2 class="section-title">Conctact form</h2>
+        <form action="#">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message.." style="height:200px"></textarea>
+        
+            <div class="form-group">
+                <button type="submit" class="send">Submit</button>
+                <button type="reset" class="clear">Clear</button>
+            </div>
+        
+          </form>
+    </section>
 
     <footer>
         <p>2019&copy; Gilberto Felipe Ramírez García - Todos los derechos reservados.</p>

@@ -6,8 +6,11 @@ $principal: #12afaf;
 $secundario: #009500;
 
 /*------------------------------
-            BODY
+            GLOBAL
 ------------------------------*/
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -37,7 +40,6 @@ header figure img {
 .main-menu {
     flex: 0 1 100%;
     display: flex;
-    flex-direction: row !important;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -74,11 +76,16 @@ main.main-info{
     display: flex;
 }
 figure.box-photo {
-    width: 200px;
+    max-width: 180px;
     height: auto;
     border: 2px solid $secundario;
     order: 0;
     background-color: gray;
+    flex: 0 1 100%;
+}
+main figure img{
+    max-width: 100%;
+    height: auto;
 }
 article.presentation button#in-main{
     background-color: $secundario;
@@ -222,8 +229,61 @@ section.hobbies ul {
 }
 
 /*------------------------------
-            CAROUSEL
+            CONTACT
 ------------------------------*/
+section.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $texto;
+    padding: .5rem 2.5rem;
+}
+section.contact h2.section-title{
+    color: $principal;
+}
+form {
+    border-radius: 5px;
+    background-color: #ddd;
+    padding: 20px;
+    max-width: 40%;
+}
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+button.send {
+    color: #fff;
+    background-color: $principal;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.send:hover {
+    background-color: $secundario;
+    border-color: transparent;
+    transition: all .5s ease;
+}
+button.clear {
+    color: #fff;
+    background-color: #6c757d;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+button.clear:hover {
+    background-color: #5a6268;
+    border-color: transparent;
+    transition: all .5s ease;
+}
 
 
 /*------------------------------
